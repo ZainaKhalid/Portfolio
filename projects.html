@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - ZK Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="images/ZK1.png">    
+  <link rel="icon" type="image/png" sizes="16x16" href="images/ZK1.png">   
+  <link rel="apple-touch-icon" sizes="180x180" href="images/ZK1.png">
+
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="container">
+    <h2 class="section-title">
+        <div class="section-icon">
+          <img src="images/ZK1.png" alt="Icon" style="width:32px; height:32px; object-fit:contain;">
+        </div>
+        My Recent Projects
+    </h2>
+
+    <!-- Project 1 -->
+    <div class="achievement">
+        <h3 class="achievement-title">AI-Powered Dynamic Notice Board</h3>
+        <img src="images/dashboard.jpg" alt="AI Notice Board Screenshot" class="project-img" onclick="openLightbox(this)">
+        <p>AI-Powered Dynamic Notice Board, an advanced full-stack web-based application designed to enhance
+        communication within institutions. This innovative system leverages AI models to generate visually
+        appealing flyers directly from calendar data, automating their publication on LED screens.</p>
+        <p><strong>Technologies:</strong> <br>Python, React, Flask, Stable Diffusion, Google Colab</p>
+        <p><em>Code available on GitHub profile.</em></p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="achievement">
+        <h3 class="achievement-title">Password Strength Checker</h3>
+        <img src="images/psc.png" alt="Password Strength Checker Screenshot" class="project-img" onclick="openLightbox(this)">
+        <p>A Python tool that checks password strength, calculates entropy, and verifies against leaked passwords using HaveIBeenPwned API.</p>
+        <p><strong>Technologies:</strong> Python, Tkinter, API Integration</p>
+        <p><em>Code available on GitHub profile.</em></p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="achievement">
+        <h3 class="achievement-title">OCR Document Extractor</h3>
+        <img src="images/ocr.png" alt="OCR Extractor Screenshot" class="project-img" onclick="openLightbox(this)">
+        <p>An interactive OCR-based document parser built in Google Colab that allows users to upload scanned documents or image files, extract meaningful information using EasyOCR, generate AI-powered summaries, and export the results in CSV and Excel formats.</p>
+        <p><strong>Technologies:</strong> Python, EasyOCR, FuzzyWuzzy, PyTorch, re, pandas, ipywidgets, datetime</p>
+        <p><em>Code available on GitHub profile.</em></p>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="achievement">
+        <h3 class="achievement-title">Smart Resume Analyzer</h3>
+        <!-- Image Thumbnails -->
+    <div class="project-gallery">
+        <img src="images/smartRA.png" alt="Password Strength Checker Screenshot 1" 
+             class="project-img" onclick="openLightbox(this)">
+        <img src="images/smartRA1.png" alt="Password Strength Checker Screenshot 2" 
+             class="project-img" onclick="openLightbox(this)">
+        <img src="images/smartRA2.png" alt="Password Strength Checker Screenshot 3" 
+             class="project-img" onclick="openLightbox(this)">
+    </div>
+        <p>An AI-powered web application that analyzes resumes, extracts skills & experience, and suggests the best-matching jobs.
+        Built with Flask (Python), HTML/CSS/JS, and SQLite.</p>
+        <p><strong>Technologies:</strong> Backend: Python, Flask, SQLite <br>Frontend: HTML5, CSS3, JavaScript <br>NLP: spaCy, regex <br>Authentication: Flask sessions <br>Database: SQLite3</p>
+        <p><em>Code available on GitHub profile.</em></p>
+    </div>
+
+<!-- Project 5 -->
+<div class="achievement">
+  <h3 class="achievement-title">SecureBot AI</h3>
+
+  <!-- Image Thumbnails -->
+  <div class="project-gallery" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+    <img src="images/bot1.png" alt="SecureBot AI Screenshot 1" 
+         class="project-img" onclick="openLightbox(this)" 
+         style="width: 120px; height: auto; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+    <img src="images/bot2.png" alt="SecureBot AI Screenshot 2" 
+         class="project-img" onclick="openLightbox(this)" 
+         style="width: 120px; height: auto; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+    <img src="images/bot3.png" alt="SecureBot AI Screenshot 3" 
+         class="project-img" onclick="openLightbox(this)" 
+         style="width: 120px; height: auto; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+    <img src="images/bot4.png" alt="SecureBot AI Screenshot 4" 
+         class="project-img" onclick="openLightbox(this)" 
+         style="width: 120px; height: auto; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+    <img src="images/bot5.png" alt="SecureBot AI Screenshot 5" 
+         class="project-img" onclick="openLightbox(this)" 
+         style="width: 120px; height: auto; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+  </div>
+
+  <p>SecureBot AI is an interactive <strong>AI-powered security awareness training chatbot</strong> designed to educate users on cybersecurity best practices. 
+     It provides real-time conversations, progress tracking per training module, and personalized feedback to help users improve their security knowledge. 
+     The system integrates a secure authentication flow, chat history saving, and backend connectivity with MongoDB Atlas.</p>
+     
+  <p><strong>Technologies:</strong> 
+     Backend: Node.js, Express.js, MongoDB Atlas <br>
+     Frontend: HTML5, CSS3, JavaScript <br>
+     Authentication: JWT, bcrypt <br>
+     AI Integration: OpenAI API (planned) <br>
+     Version Control: Git & GitHub</p>
+     
+  <p><em>Code available on GitHub profile.</em></p>
+</div>
+
+    <div>
+    <a href="index.html" class="back-btn">⬅ Back to Home</a>
+  </div>
+
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" class="lightbox-content">
+</div>
+
+  <footer>
+    <div class="social-icons">
+        <a href="mailto:zainashah678@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/zainab-khalid-0b971b2a5" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ZainaKhalid" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </footer>
+  
+  <script src="portfolio.js"></script>
+</body>
+</html>
