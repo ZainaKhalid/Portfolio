@@ -274,19 +274,74 @@
             text-shadow: 0 0 5px rgba(218, 112, 214, 0.3);
         }
 
-        .skills-grid {
+        .skills-scroll {
+            width: 100%;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(30, 30, 50, 0.8), rgba(40, 40, 60, 0.6));
+            padding: 10px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border: 1px solid rgba(138, 43, 226, 0.2);
+        }
+
+        .skills-scroll1 {
+            width: 100%;
+            overflow: hidden;
+            background: #4a035a89; /* optional */
+            padding: 10px 0;
+            border-radius: 0px;
+            box-shadow: 0 0 5px rgba(218, 112, 214, 0.3);        
+        }
+
+        .skills-scroll h4{
+            margin-bottom: 15px;
+            margin-top: 2%;
+            font-size: 1.2rem;
+            color: #da70d6;
+            text-shadow: 0 0 5px rgba(218, 112, 214, 0.3);
+        }
+        .skills-track {
+            display: flex;
+            width: max-content;
+            animation: scroll-left 35s linear infinite;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.1rem;
+            padding: 0 20px;
+            white-space: nowrap;
+        }
+
+        .skill-item i {
+            font-size: 1.5rem;
+        }
+
+        /* Infinite scrolling keyframes */
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .skills-grid-two {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: 1fr 1fr; /* two equal columns */
             gap: 20px;
+            width: 100%;
             margin-top: 20px;
         }
 
         .skill-category {
             background: linear-gradient(135deg, rgba(30, 30, 50, 0.8), rgba(40, 40, 60, 0.6));
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
             text-align: center;
             transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 460px;   /* optional: prevent overly wide boxes */
             border: 1px solid rgba(138, 43, 226, 0.2);
         }
 
