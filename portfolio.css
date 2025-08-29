@@ -1,25 +1,10 @@
-    #particles-js {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: #1f0432; /* dark tech style */
-            z-index: -1; 
-            top: 0;
-            left: 0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
     body {
       margin: 0;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
       background: #0f2027; /* fallback */
-      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+      background: linear-gradient(to right, #35214b, #2d2043, #1a0f27);
       overflow-x: hidden;
     }
 
@@ -41,8 +26,8 @@
       justify-content: center;
       text-align: center;
       background: #411b71;
-      background: url("images/floral.jpeg") no-repeat center/cover; /* Change image */
-      background-color: rgba(255, 255, 255, 0.326); /* black transparent overlay */
+      background: url("images/cbg.jpg") no-repeat center/cover; /* Change image */
+      background-color: rgba(255, 255, 255, 0.47); /* black transparent overlay */
       background-blend-mode: overlay;    /* blend the overlay with image */
       color: rgb(73, 4, 113);
       z-index: 1; /* keep text above overlay */
@@ -66,8 +51,8 @@
             max-width: 1000px;
             margin: auto;
             background: rgba(0, 0, 3, 0.8);
-            background: url("images/fbg.jpeg") no-repeat center/cover; /* Change image */
-            background-color: rgba(6, 6, 6, 0.68); /* black transparent overlay */
+            background: url("images/fbg.jpg") no-repeat center/cover; /* Change image */
+            background-color: rgba(6, 6, 6, 0.872); /* black transparent overlay */
             background-blend-mode: overlay;
             box-shadow: 0 8px 32px rgba(138, 43, 226, 0.3);
             border-radius: 20px;
